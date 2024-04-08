@@ -1,6 +1,3 @@
 #!/usr/bin/env bash
-# debugging nginx (service (init) must say that nginx is not running)
-sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
-service nginx restart
-pkill -o nginx
-
+# im comment :)
+sudo python3 -m http.server --directory /usr/share/nginx/html 80 > /dev/null 2>&1 &
