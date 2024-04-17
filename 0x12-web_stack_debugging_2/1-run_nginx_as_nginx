@@ -1,4 +1,5 @@
-un Nginx as Nginx User
+#!/usr/bin/env bash
+# Run Nginx as Nginx User
 
 sudo service nginx stop
 echo "user nginx;" >> /etc/nginx/nginx.conf
