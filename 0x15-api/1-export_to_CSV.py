@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """ module doc """
+import csv
 import requests
 import sys
 
