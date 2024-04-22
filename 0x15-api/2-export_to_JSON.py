@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """ module doc """
-import 2.json
+import json
 import requests
 import sys
 
