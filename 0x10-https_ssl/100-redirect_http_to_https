@@ -30,12 +30,11 @@ frontend www-https
     acl    letsencrypt-acl path_beg /.well-known/acme-challenge/
     use_backend letsencrypt-backend if letsencrypt-acl
     default_backend www-backend
-
 backend www-backend
     balance  roundrobin
     redirect scheme https if !{ ssl_fc }
-    server 375-web-01 104.196.168.90:80 check
-    server 375-web-02 35.196.46.172:80 check
+    server 375-web-01 100.25.144.200:80 check
+    server 375-web-02 100.24.74.93:80 check
 
 backend letsencrypt-backend
     server letsencrypt 127.0.0.1:54321
